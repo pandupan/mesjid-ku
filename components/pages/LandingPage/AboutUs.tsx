@@ -11,9 +11,9 @@ const AboutUs = () => {
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu.
         </p>
-        <button className="bg-[#1DBBB4] w-[154px] h-[48px] rounded-xl">
-        <a className="place-self-center">Learn More</a>
-      </button>
+        <button className="bg-[#1DBBB4] w-[154px] h-[43px] rounded-xl">
+      <a className="place-self-center">Learn More</a>
+    </button>
       </div>
 
       <div className="relative border-4 border-[#0C7C95] w-[595px] h-[477px] ">
