@@ -11,7 +11,7 @@ const HistoryOfCenter = () => {
       </h3>
     <h1 className="text-theme-secondary text-6xl font-bold">History Of Center</h1>
       </div>
-      <p className="w-[470px] mt-10">
+      <p className="w-[470px] mt-8">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
       </p>
       <h2 className='font-bold'>
@@ -29,7 +29,7 @@ const HistoryOfCenter = () => {
           <li>Providing Homes</li>
         </ul>
       </div>
-      <button className="bg-[#1DBBB4] w-[154px] h-[43px] rounded-xl">
+      <button className="bg-[#1DBBB4] w-[154px] h-[43px] rounded-xl mt-2">
       <a className="place-self-center">Learn More</a>
     </button>
     </div>
