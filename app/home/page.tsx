@@ -1,3 +1,4 @@
+import EventsBlog from '@/components/pages/HomePageT1/EventsBlog'
 import HeroSectionHP from '@/components/pages/HomePageT1/HeroSectionHP'
 import HistoryOfCenter from '@/components/pages/HomePageT1/HistoryOfCenter'
 import NamazTimings from '@/components/pages/HomePageT1/NamazTimings'
@@ -13,6 +14,7 @@ const page = () => {
       <HistoryOfCenter/>
       <PillarsOfIslam/>
       <OurGallery/>
+      <EventsBlog/>
     </div>
   )
 }
