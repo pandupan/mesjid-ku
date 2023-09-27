@@ -8,6 +8,7 @@ import { Fragment, useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 import { InputAuth } from "../ui/inputAuth";
 import { Label } from "../ui/label";
+import { Checkbox } from "../ui/checkbox";
 
 
 const Navbar = () => {
@@ -24,9 +25,11 @@ const Navbar = () => {
 
   function openModalLogin() {
     setIsOpenLogin(true)
+    setIsOpenSign(false)
   }
   function openModalSign() {
     setIsOpenSign(true)
+    setIsOpenLogin(false)
   }
 
   return (
@@ -92,8 +95,9 @@ const Navbar = () => {
                     <div className="text-2xl font-bold">
                       LOGIN
                     </div>
-
-                    <AiOutlineClose onClick={closeModalLogin} size={25} />
+                    <button>
+                      <AiOutlineClose onClick={closeModalLogin} size={25} />
+                    </button>
                   </Dialog.Title>
 
                     <div className="flex flex-col justify-center mt-4 gap-3 px-4">
@@ -101,17 +105,30 @@ const Navbar = () => {
                       <InputAuth type="email" placeholder="Your email" />
                       <Label htmlFor="password">Password</Label>
                       <InputAuth type="title" placeholder="**********" />
-                    </div>
+                      <div className="text-white items-center justify-center flex flex-col gap-[20px]">
+                        <div className="space-x-2 mt-2">
+                          <Checkbox id="terms1" />
+                            <label
+                              htmlFor="terms1"
+                              className="text-sm peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black"
+                            >
+                              Remember me
+                            </label>
+                        </div>
 
-                  <div className="mt-4">
-                    <button
-                      type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModalLogin}
-                    >
-                      Got it, thanks!
-                    </button>
-                  </div>
+                          <Button title="Login"/>
+                          <Link href="#" className="text-sm text-theme">
+                            Forgot Password?
+                          </Link>
+                          <div className="w-[85%] h-[1px] bg-theme mx-auto"/>
+
+                        <div className="flex flex-col items-center justify-center text-black">
+                          <p>Don&apos;t have an account?</p>
+                          <button onClick={openModalSign} className="text-theme my-[15px]">Sign Up</button>
+                        </div>
+                        
+                      </div>
+                    </div>
 
                 </Dialog.Panel>
               </Transition.Child>
@@ -148,27 +165,50 @@ const Navbar = () => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title
-                    as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
-                  >
-                    Payment successful
-                  </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Sign
-                    </p>
+
+                <Dialog.Title
+                  as="h3"
+                  className="flex items-center justify-between px-4"
+                >
+                  <div className="text-2xl font-bold">
+                    SIGN UP
+                  </div>
+                  <button>
+                    <AiOutlineClose onClick={closeModalSign} size={25} />
+                  </button>
+                </Dialog.Title>
+
+                  <div className="flex flex-col justify-center mt-4 gap-3 px-4">
+                    <Label htmlFor="name">Name</Label>
+                    <InputAuth type="name" placeholder="Your Name" />
+                    <Label htmlFor="email">Email</Label>
+                    <InputAuth type="email" placeholder="Your email" />
+                    <Label htmlFor="phone">Phone Number (Optional)</Label>
+                    <InputAuth type="phone" placeholder="Your phone" />
+                    <Label htmlFor="password">Password</Label>
+                    <InputAuth type="title" placeholder="**********" />
+                    <div className="text-white items-center justify-center flex flex-col gap-[20px]">
+                      <div className="space-x-2 mt-2">
+                        <Checkbox id="terms2" />
+                          <label
+                            htmlFor="terms1"
+                            className="text-sm peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-black"
+                          >
+                            I agree with <span className="text-theme">Terms</span> & <span className="text-theme">Privacy</span>
+                          </label>
+                      </div>
+
+                        <Button title="Sign Up"/>
+                        <div className="w-[85%] h-[1px] bg-theme mx-auto"/>
+
+                      <div className="flex flex-col items-center justify-center text-black">
+                        <p>Already have an account?</p>
+                        <button onClick={openModalLogin} className="text-theme my-[15px]">Login</button>
+                      </div>
+                      
+                    </div>
                   </div>
 
-                  <div className="mt-4">
-                    <button
-                      type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModalSign}
-                    >
-                      Got it, thanks!
-                    </button>
-                  </div>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
