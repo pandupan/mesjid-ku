@@ -1,7 +1,7 @@
 import Image from "next/image";
 const OurGallery = () => {
   return (
-    <div className="relative px-4 sm:px-10 xl:container flex flex-col py-8 overflow-y-auto ">
+    <div className="relative px-4 sm:px-10 xl:container flex flex-col py-8 overflow-hidden ">
           <div className="absolute -top-80 -right-8 z-0">
       <div className="relative aspect-square w-[310px] h-[670px]">
         <Image 
