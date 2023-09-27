@@ -1,12 +1,20 @@
-import React from 'react'
+import Image from "next/image"
 
 const HeroSectionHP = () => {
   return (
-    <div className="lg:mt-0 mt-[135px] px-4 sm:px-10 xl:px-0 flex flex-col gap-8 bg-theme-secondary drop-shadow-lg py-28 justify-center items-center">
+    <div className="relative lg:mt-0 mt-[135px] h-[558px] px-4 sm:px-10 xl:container flex flex-col gap-8 bg-theme-secondary drop-shadow-lg py-28 justify-center items-center">
+      <div className='object-cover'>
+      <Image 
+          src="/images/heroHP.png" 
+          alt="bg-vector" 
+          fill={true} />
+      </div>
+      <div className="absolute flex flex-col justify-center items-center place-self-center">
       <h1 className="text-white text-7xl text-center font-bold w-[900px]">
         Indeed, Allah defends those who have believed
       </h1>
-      <h3 className="text-white text-xl font-bold">QURAN (22:38)</h3>
+      <h3 className="text-white text-xl font-bold mt-10">QURAN (22:38)</h3>
+      </div>
     </div>
   )
 }

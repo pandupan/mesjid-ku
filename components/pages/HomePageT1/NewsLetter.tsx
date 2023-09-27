@@ -7,7 +7,7 @@ import {TfiYoutube} from "react-icons/tfi"
 import {GrGooglePlus} from "react-icons/gr"
 const NewsLetter = () => {
   return (
-    <div className="px-4 sm:px-10 relative overflow-hidden flex flex-col w-full h-[900px]">
+    <div className="px-4 sm:px-10 relative overflow-hidden flex flex-col w-full h-[800px]">
       <div className="object-cover aspect-square">
         <Image src="/images/NewsLetter.png" alt="bg-vector" fill={true} />
       </div>
