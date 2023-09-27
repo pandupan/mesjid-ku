@@ -3,21 +3,21 @@ import Image from 'next/image'
 
 const HistoryOfCenter = () => {
   return (
-    <div className="relative flex px-4 sm:px-10 xl:container flex-row justify-center items-center gap-24 pt-20 pb-32">
-    <div className="flex flex-col gap-4">
+    <div className="relative flex px-4 sm:px-10 xl:container lg:flex-row flex-col-reverse justify-center items-center gap-24 pt-20 pb-32">
+    <div className="flex flex-col gap-3 sm:gap-4">
       <div>
-      <h3 className='font-bold'>
+      <h3 className='text-xs sm:text-sm xl:text-base font-bold'>
         Few Words About
       </h3>
-    <h1 className="text-theme-secondary text-6xl font-bold">History Of Center</h1>
+    <h1 className="text-theme-secondary text-3xl sm:text-5xl xl:text-6xl font-bold">History Of Center</h1>
       </div>
-      <p className="w-[470px] mt-8">
+      <p className="sm:w-[470px] mt-2 xl:mt-8 sm:text-base text-sm">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
       </p>
-      <h2 className='font-bold'>
+      <h2 className='font-bold sm:text-base text-sm'>
         The Mosque is the #1 Islamic Center in the Country!
       </h2>
-      <div className='flex flex-row gap-28'>
+      <div className='flex flex-row gap-28 sm:text-base text-sm'>
         <ul>
           <li>Astonishing Facilities</li>
           <li>Leads Charity Events</li>
@@ -34,10 +34,10 @@ const HistoryOfCenter = () => {
     </button>
     </div>
 
-    <div className="relative border-4 border-[#0C7C95] w-[523px] h-[523px] ">
+    <div className="relative border-4 border-[#0C7C95] w-[270px] h-[270px] sm:w-[470px] sm:h-[470px] lg:w-[400px] lg:h-[400px] xl:w-[523px] xl:h-[523px] ">
       <div>
-      <div className="absolute -top-10 -left-10 z-0">
-      <div className="relative aspect-square w-[523px] h-[523px]">
+      <div className="absolute -top-4 -left-4 lg:-left-14 lg:-top-8 sm:-top-10 sm:-left-10 z-0">
+      <div className="relative aspect-square w-[270px] h-[270px] sm:w-[470px] sm:h-[470px] lg:w-[400px] lg:h-[400px] xl:w-[523px] xl:h-[523px]">
         <Image 
           src="/images/mosque2.png" 
           alt="bg-vector" 

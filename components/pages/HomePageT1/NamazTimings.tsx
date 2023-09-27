@@ -4,19 +4,19 @@ const NamazTimings = () => {
   return (
     <div className="px-4 sm:px-10 xl:container flex flex-col pb-20 ">
       <div className="flex flex-col items-center my-10">
-        <h3 className="font-bold">Associated Mosque</h3>
-        <h1 className="text-theme-secondary text-6xl font-bold">
+        <h3 className="font-bold text-xs">Associated Mosque</h3>
+        <h1 className="text-theme-secondary text-3xl lg:text-6xl font-bold">
           Namaz Timings
         </h1>
       </div>
-      <div className="w-[363px] bg-[#1DBBB4] place-self-center flex justify-center items-center mt-6">
-        <h3>
+      <div className="lg:w-[363px] bg-[#1DBBB4] place-self-center flex justify-center items-center mt-6">
+        <h3 className="lg:text-base text-xs">
           Next In: <a className="text-white"> 5 hours 47 minutes 25 seconds </a>
         </h3>
       </div>
       <div className="flex flex-col items-center w-full ">
         <div>
-          <div className="flex flex-row">
+          <div className="flex sm:flex-row flex-col">
             <div className="bg-[#EFFFFE] py-6 px-10 flex flex-col gap-2">
               <h1 className="text-2xl font-bold">FAJR</h1>
               <div>

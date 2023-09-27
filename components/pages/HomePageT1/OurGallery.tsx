@@ -8,26 +8,26 @@ const OurGallery = () => {
         </div>
       </div>
       <div className="flex flex-col items-center my-10">
-        <h3 className="text-[#004B48] font-bold">Associated Mosque</h3>
-        <h1 className="text-[#004B48] text-6xl font-bold">Our Gallery</h1>
+        <h3 className="text-[#004B48] font-bold text-xs">Associated Mosque</h3>
+        <h1 className="text-[#004B48] text-3xl lg:text-6xl font-bold">Our Gallery</h1>
       </div>
-      <p className="text-center w-[750px] place-self-center">
+      <p className="text-center sm:w-[750px] place-self-center sm:text-base text-sm">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore.
       </p>
-      <div className="flex flex-row gap-8 mt-12 justify-center">
-        <div className="relative first-line:bg-[#b6c9c3] w-[728px] h-[580px]">
+      <div className="flex flex-col sm:flex-row gap-8 mt-12 justify-center">
+        <div className="relative first-line:bg-[#b6c9c3] h-[270px] sm:w-[728px] sm:h-[580px]">
           <div className="object-cover">
             <Image src="/images/Gallery1.png" alt="bg-vector" fill={true} />
           </div>
         </div>
-        <div className="flex flex-col gap-6">
-          <div className="relative w-[346px] h-[277px] bg-[#b6c9c3]">
+        <div className="flex sm:flex-col flex-row sm:gap-6 gap-8">
+          <div className="relative w-[130px] h-[100px] sm:w-[346px] sm:h-[277px] bg-[#b6c9c3]">
             <div className="object-cover">
               <Image src="/images/Gallery2.png" alt="bg-vector" fill={true} />
             </div>
           </div>
-          <div className="relative w-[346px] h-[277px] bg-[#b6c9c3]">
+          <div className="relative w-[130px] h-[100px] sm:w-[346px] sm:h-[277px] bg-[#b6c9c3]">
             <div className="object-cover">
               <Image src="/images/Gallery3.png" alt="bg-vector" fill={true} />
             </div>
