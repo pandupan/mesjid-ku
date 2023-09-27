@@ -9,7 +9,7 @@ const PillarsOfIslam = () => {
           Pillars Of Islam
         </h1>
       </div>
-      <div className='flex flex-row gap-14 mt-8 items-center'>
+      <div className='flex flex-row gap-14 mt-16 items-center'>
         <div className='flex flex-col text-center items-center w-[200px]'>
           <div className='relative rounded-full w-[170px] h-[170px]'>
             <div className='absolute w-[200px] h-[200px] -left-4 -top-4 rounded-full flex justify-center items-center place-self-center border-2 border-[#03716D80]'>
