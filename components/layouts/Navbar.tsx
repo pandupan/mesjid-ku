@@ -9,10 +9,10 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 import { InputAuth } from "../ui/inputAuth";
 import { Label } from "../ui/label";
 import { Checkbox } from "../ui/checkbox";
-
+import ButtonFull from "../core/ButtonFull";
 
 const Navbar = () => {
-
+  let [nav, setNav] = useState(false)
   let [isOpenLogin, setIsOpenLogin] = useState(false)
   let [isOpenSign, setIsOpenSign] = useState(false)
 
@@ -26,29 +26,33 @@ const Navbar = () => {
   function openModalLogin() {
     setIsOpenLogin(true)
     setIsOpenSign(false)
+    setNav(false)
   }
   function openModalSign() {
     setIsOpenSign(true)
     setIsOpenLogin(false)
+    setNav(false)
   }
 
   return (
     <>  
       {/* Navbar Desktop*/}  
-      <div className="flex justify-between items-center w-full h-[135px] container">
+      <div className="hidden lg:flex justify-between items-center w-full h-[135px] container">
         <div className="relative w-[90px] h-[90px]">
-          <Image 
-            src="/images/logo.png"
-            alt="logo"
-            fill={true}
-          />
+          <Link href="/">
+            <Image 
+              src="/images/logo.png"
+              alt="logo"
+              fill={true}
+            />
+          </Link>
         </div>
         <div className="flex items-center gap-12">
           <div className="flex gap-6 text-lg">
             <Link href="/home">Home</Link>
-            <Link href="#theme">Themes</Link>
-            <Link href="#about">About Us</Link>
-            <Link href="#contact">Contact</Link>
+            <Link href="/#theme">Themes</Link>
+            <Link href="/#about">About Us</Link>
+            <Link href="/#contact">Contact</Link>
           </div>
           <div className="flex gap-6">
             <Button title="Login" onClick={openModalLogin}/>
@@ -115,9 +119,11 @@ const Navbar = () => {
                               Remember me
                             </label>
                         </div>
-
-                          <Button title="Login"/>
-                          <Link href="#" className="text-sm text-theme">
+                          <Link href="/home" onClick={closeModalLogin}>
+                            <Button title="Login"/>
+                          </Link>
+                          
+                          <Link href="/#contact" className="text-sm text-theme" onClick={closeModalLogin}>
                             Forgot Password?
                           </Link>
                           <div className="w-[85%] h-[1px] bg-theme mx-auto"/>
@@ -197,8 +203,10 @@ const Navbar = () => {
                             I agree with <span className="text-theme">Terms</span> & <span className="text-theme">Privacy</span>
                           </label>
                       </div>
+                        <Link href="/home" onClick={closeModalSign}>
+                          <Button title="Sign Up"/>
+                        </Link>
 
-                        <Button title="Sign Up"/>
                         <div className="w-[85%] h-[1px] bg-theme mx-auto"/>
 
                       <div className="flex flex-col items-center justify-center text-black">
@@ -216,6 +224,46 @@ const Navbar = () => {
         </Dialog>
       </Transition>
       {/*End Pop Over Modal Sign*/}
+
+      {/* Hamburger On Mobile  */}
+        <div className="fixed flex justify-between items-center w-full h-[135px] lg:hidden border-b border-theme px-[25px] bg-white z-10">
+          <div className="relative w-[60px] h-[60px]">
+            <Link href="/">
+              <Image 
+                src="/images/logo.png"
+                alt="logo"
+                fill={true}
+              />
+            </Link>
+          </div>
+          {nav ? 
+            <AiOutlineClose size={30} onClick={() => setNav(!nav)} className="text-theme" />
+          : <AiOutlineMenu size={30} onClick={() => setNav(!nav)} className="text-theme" />
+          }
+        </div>
+      {/* End Hamburger On Mobile  */}
+
+      {/* Dropdown Menu Mobile */}
+      <div className={
+        nav ?
+          "fixed lg:hidden top-[135px] left-0 right-0 bottom-0 flex justify-center items-center h-[100vh] bg-white ease-in-out duration-700 z-[80]"
+        :
+          "fixed lg:hidden top-[-100%] left-0 right-0 bottom-0 flex justify-center items-center h-[100vh] bg-white ease-in-out duration-700 z-[80]"
+      }>
+        <div className="w-full h-full px-[25px]">
+          <ul className="space-y-5 text-lg my-6 px-1" onClick={() => setNav(!nav)}>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/#theme">Theme</Link></li>
+            <li><Link href="/#about">About</Link></li>
+            <li><Link href="/#contact">Contact</Link></li>
+          </ul>
+          <div className="w-full h-auto flex flex-col gap-4">
+            <ButtonFull title="Sign Up" onClick={openModalSign}/>
+            <ButtonFull title="Login" onClick={openModalLogin}/>
+          </div>
+        </div>
+      </div> 
+      {/* End Dropdown Menu Mobile */}
 
     </>
   )

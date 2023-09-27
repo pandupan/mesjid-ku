@@ -1,6 +1,6 @@
 const HeroSectionLP = () => {
   return (
-    <div className="px-4 sm:px-10 xl:container flex flex-col gap-2 bg-theme-secondary drop-shadow-lg py-20 justify-center">
+    <div className="lg:mt-0 mt-[135px] px-4 sm:px-10 xl:container flex flex-col gap-2 bg-theme-secondary drop-shadow-lg py-20 justify-center">
       <h1 className="text-white text-7xl font-bold w-[765px]">
         DO NOT LOSE HOPE, NOR BE SAD
       </h1>
