@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroSectionLP = () => {
   return (
-    <div className="relative lg:mt-0 mt-[135px] h-[558px] px-4 sm:px-10 xl:container flex flex-col gap-2 bg-theme-secondary drop-shadow-lg py-20 justify-center">
+    <div className="relative lg:mt-0 mt-[125px] h-[558px] px-4 sm:px-10 xl:container flex flex-col gap-2 bg-theme-secondary drop-shadow-lg py-20 justify-center">
       <div className="object-cover">
       <Image 
                   src="/images/HeroLP.png" 
