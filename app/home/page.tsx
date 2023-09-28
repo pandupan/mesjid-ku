@@ -10,7 +10,7 @@ import NewsLetter from '@/components/pages/HomePageT1/NewsLetter'
 
 const page = () => {
   return (
-    <div>
+    <>
       <HeroSectionHP/>
       <NamazTimings/>
       <HistoryOfCenter/>
@@ -19,7 +19,7 @@ const page = () => {
       <EventsBlog/>
       <ContactUsHome/>
       <NewsLetter/>
-    </div>
+    </>
   )
 }
 
