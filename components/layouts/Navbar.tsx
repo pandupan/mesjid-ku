@@ -287,7 +287,7 @@ const Navbar = () => {
       }>
         <div className="w-full h-full px-[25px]">
           <ul className="space-y-5 text-lg my-6 px-1" onClick={() => setNav(!nav)}>
-            <li><Link href="/">Home</Link></li>
+            <li><Link href="/home">Home</Link></li>
             <li><Link href="/#theme">Theme</Link></li>
             <li><Link href="/#about">About</Link></li>
             <li><Link href="/#contact">Contact</Link></li>
