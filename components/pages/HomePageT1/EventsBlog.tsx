@@ -11,10 +11,10 @@ const EventsBlog = () => {
         <h1 className="text-[#004B48] text-3xl lg:text-6xl font-bold">Our Event & Blog</h1>
       </div>
       <div className="flex sm:flex-row flex-col gap-6 mt-10">
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-row items-center bg-white w-[714px] h-[247px] shadow-md">
+        <div className="flex flex-col gap-6 items-center">
+          <div className="flex flex-row items-center bg-white w-[300px] h-[200px] sm:w-[714px] sm:h-[247px] shadow-md">
             <div className="flex sm:flex-row">
-              <div className="relative w-[298px] h-[247px] bg-[#b6c9c3]">
+              <div className="relative sm:w-[298px] sm:h-[247px] bg-[#b6c9c3]">
                 <div className="object-cover">
                   <Image
                     src="/images/EventsBlog1.png"
@@ -23,8 +23,8 @@ const EventsBlog = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-4 p-8">
-                <h1 className="text-xl text-theme-secondary font-bold">
+              <div className="flex flex-col gap-2 sm:gap-4 p-8">
+                <h1 className="sm:text-xl text-md text-theme-secondary font-bold">
                   Is Islam Old Philosophy?
                 </h1>
                 <div className="flex flex-row gap-10">
@@ -32,28 +32,28 @@ const EventsBlog = () => {
                     <div className="text-[#13bbb4]">
                       <FaCalendarAlt size={17} />
                     </div>
-                    <h3 className="place-self-center">Jan 6, 2022</h3>
+                    <h3 className="sm:text-base text-xs place-self-center">Jan 6, 2022</h3>
                   </div>
                   <div className="flex flex-row gap-2 items-center">
                     <div className="text-[#13bbb4]">
                       <FaUser size={17} />
                     </div>
-                    <h3 className="place-self-center">Imam Ullah</h3>
+                    <h3 className="sm:text-base text-xs place-self-center">Imam Ullah</h3>
                   </div>
                 </div>
-                <p className="w-[324px] text-sm">
+                <p className="sm:w-[324px] sm:text-sm text-xs">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore.
                 </p>
-                <a href="" className="text-theme-secondary text-sm">
+                <a href="" className="text-theme-secondary text-xs sm:text-sm">
                   View Details
                 </a>
               </div>
             </div>
           </div>
-          <div className="flex flex-row items-center bg-white w-[714px] h-[247px] shadow-md">
+          <div className="flex flex-row items-center bg-white w-[300px] h-[200px] sm:w-[714px] sm:h-[247px]  shadow-md">
             <div className="flex flex-row">
-              <div className="relative w-[298px] h-[247px] bg-[#b6c9c3]">
+              <div className="relative sm:w-[298px] sm:h-[247px] bg-[#b6c9c3]">
                 <div className="object-cover">
                   <Image
                     src="/images/EventsBlog2.png"
@@ -63,7 +63,7 @@ const EventsBlog = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-4 p-8">
-                <h1 className="text-xl text-theme-secondary font-bold">
+                <h1 className="sm:text-xl text-md text-theme-secondary font-bold">
                   Importance Of Namaz
                 </h1>
                 <div className="flex flex-row gap-10">
@@ -71,20 +71,20 @@ const EventsBlog = () => {
                     <div className="text-[#13bbb4]">
                       <FaCalendarAlt size={17} />
                     </div>
-                    <h3 className="place-self-center">Jan 8, 2022</h3>
+                    <h3 className="sm:text-base text-xs place-self-center">Jan 8, 2022</h3>
                   </div>
                   <div className="flex flex-row gap-2 items-center">
                     <div className="text-[#13bbb4]">
                       <FaUser size={17} />
                     </div>
-                    <h3 className="place-self-center">Imam Ullah</h3>
+                    <h3 className="sm:text-base text-xs place-self-center">Imam Ullah</h3>
                   </div>
                 </div>
-                <p className="w-[324px] text-sm">
+                <p className="sm:w-[324px] sm:text-sm text-xs">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore.
                 </p>
-                <a href="" className="text-theme-secondary text-sm">
+                <a href="" className="text-theme-secondary text-xs sm:text-sm">
                   View Details
                 </a>
               </div>

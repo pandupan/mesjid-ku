@@ -16,7 +16,7 @@ const NamazTimings = () => {
       </div>
       <div className="flex flex-col items-center w-full ">
         <div>
-          <div className="flex sm:flex-row flex-col">
+          <div className="flex lg:flex-row flex-col">
             <div className="bg-[#EFFFFE] py-6 px-10 flex flex-col gap-2">
               <h1 className="text-2xl font-bold">FAJR</h1>
               <div>
