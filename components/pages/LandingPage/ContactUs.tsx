@@ -7,12 +7,12 @@ import Button from "@/components/core/Button";
 const ContactUs = () => {
   return (
     <section id="contact">
-      <div className="relative h-auto w-full flex px-4 sm:px-10 xl:container flex-row justify-center items-center gap-12">
+      <div className="relative h-auto w-full flex flex-col lg:flex-row px-4 sm:px-10 xl:container justify-center items-center gap-12">
 
-        <div className="relative border-4 border-[#0C7C95] w-[595px] h-[477px] mt-16">
+        <div className="relative border-4 border-[#0C7C95] w-[295px] h-[277px] sm:w-[395px] sm:h-[377px] lg:w-[595px] lg:h-[477px] mt-16">
           <div>
             <div className="absolute -top-10 -left-10 z-0">
-              <div className="relative aspect-square w-[595px] h-[477px]">
+              <div className="relative aspect-square  w-[295px] h-[277px] sm:w-[395px] sm:h-[377px] lg:w-[595px] lg:h-[477px]">
                 <Image src="/images/mosque3.png" alt="bg-vector" fill={true} />
               </div>
             </div>
