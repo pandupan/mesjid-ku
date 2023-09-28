@@ -15,19 +15,19 @@ const OurGallery = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore.
       </p>
-      <div className="flex flex-col sm:flex-row gap-8 mt-12 justify-center">
-        <div className="relative first-line:bg-[#b6c9c3] h-[270px] sm:w-[728px] sm:h-[580px]">
+      <div className="flex flex-col sm:flex-row gap-8 mt-12 justify-center items-center">
+        <div className="relative first-line:bg-[#b6c9c3] w-[288px] h-[270px] xl:w-[728px] sm:w-full sm:h-[328px] xl:h-[580px] lg:w-[500px] lg:h-[400px]">
           <div className="object-cover">
             <Image src="/images/Gallery1.png" alt="bg-vector" fill={true} />
           </div>
         </div>
         <div className="flex sm:flex-col flex-row sm:gap-6 gap-8">
-          <div className="relative w-[130px] h-[100px] sm:w-[346px] sm:h-[277px] bg-[#b6c9c3]">
+          <div className="relative w-[130px] h-[100px] xl:w-[346px] sm:w-[200px] lg:w-[246px] sm:h-[152px] lg:h-[188px] xl:h-[277px] bg-[#b6c9c3]">
             <div className="object-cover">
               <Image src="/images/Gallery2.png" alt="bg-vector" fill={true} />
             </div>
           </div>
-          <div className="relative w-[130px] h-[100px] sm:w-[346px] sm:h-[277px] bg-[#b6c9c3]">
+          <div className="relative w-[130px] h-[100px] xl:w-[346px] sm:w-[200px] lg:w-[246px] sm:h-[152px] lg:h-[188px] xl:h-[277px] bg-[#b6c9c3]">
             <div className="object-cover">
               <Image src="/images/Gallery3.png" alt="bg-vector" fill={true} />
             </div>
@@ -35,8 +35,8 @@ const OurGallery = () => {
         </div>
       </div>
       <div className="mt-10 flex items-center justify-center ">
-        <button className="bg-[#1DBBB4] w-[154px] h-[43px] rounded-xl mt-2 place-self-center">
-          <a className="place-self-center">View More</a>
+        <button className="bg-[#1DBBB4] sm:w-[154px] w-[120px] h-[30px] sm:h-[43px] rounded-xl mt-2 place-self-center">
+          <a className="place-self-center sm:text-base text-sm">View More</a>
         </button>
       </div>
     </div>
