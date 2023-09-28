@@ -35,9 +35,9 @@ const OurGallery = () => {
         </div>
       </div>
       <div className="mt-10 flex items-center justify-center ">
-        <button className="bg-[#1DBBB4] sm:w-[154px] w-[120px] h-[30px] sm:h-[43px] rounded-xl mt-2 place-self-center">
-          <a className="place-self-center sm:text-base text-sm">View More</a>
-        </button>
+        <a href=" " className="bg-[#1DBBB4] sm:w-[154px] w-[120px] h-[30px] sm:h-[43px] justify-center items-center flex rounded-xl mt-2 place-self-center">
+          <p className="place-self-center text-center sm:text-base text-sm">View More</p>
+        </a>
       </div>
     </div>
   );

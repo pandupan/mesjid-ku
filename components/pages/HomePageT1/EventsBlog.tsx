@@ -7,13 +7,13 @@ const EventsBlog = () => {
   return (
     <div className="px-4 sm:px-10 items-center flex flex-col py-8 bg-[#e7f8f7]">
       <div className="flex flex-col items-center gap-2 my-10">
-        <h3 className="text-[#004B48] font-bold">Events & Blog</h3>
-        <h1 className="text-[#004B48] text-6xl font-bold">Our Events & Blog</h1>
+      <h3 className="text-[#004B48] font-bold text-xs">Events & Blog</h3>
+        <h1 className="text-[#004B48] text-3xl lg:text-6xl font-bold">Our Event & Blog</h1>
       </div>
-      <div className="flex flex-row gap-6 mt-10">
+      <div className="flex sm:flex-row flex-col gap-6 mt-10">
         <div className="flex flex-col gap-6">
           <div className="flex flex-row items-center bg-white w-[714px] h-[247px] shadow-md">
-            <div className="flex flex-row">
+            <div className="flex sm:flex-row">
               <div className="relative w-[298px] h-[247px] bg-[#b6c9c3]">
                 <div className="object-cover">
                   <Image
@@ -92,7 +92,7 @@ const EventsBlog = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-9">
+        <div className="flex flex-col justify-center items-center gap-9">
           <div className="relative overflow-hidden flex flex-row w-[432px] h-[149px] bg-white py-8 px-4 gap-6">
             <div className="object-cover">
               <Image
