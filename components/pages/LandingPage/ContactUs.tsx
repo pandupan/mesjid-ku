@@ -20,7 +20,7 @@ const ContactUs = () => {
         </div>
 
         <div className="flex flex-col gap-5 space-y-1">
-          <h1 className="text-[#0C7C95] text-7xl font-bold">Contact Us</h1>
+          <h1 className="text-[#0C7C95] text-4xl md:text-6xl lg:text-7xl font-bold">Contact Us</h1>
           <Input type="email" placeholder="Email address" />
           <Input type="title" placeholder="Title/Subject" />
           <Textarea placeholder="Write your message.." />
