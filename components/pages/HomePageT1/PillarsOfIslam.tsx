@@ -2,13 +2,7 @@ import Image from "next/image"
 
 const PillarsOfIslam = () => {
   return (
-    <div className="relative px-4 sm:px-10 h-[632px] xl:container flex flex-col gap-8 bg-[#24643c]  pt-20 pb-28 drop-shadow-lg justify-center items-center ">
-            <div className='object-cover'>
-      <Image 
-          src="/images/Pillars.png" 
-          alt="bg-vector" 
-          fill={true} />
-      </div>
+    <div className="relative px-4 sm:px-10 h-[632px] xl:container flex flex-col gap-8 pt-20 pb-28 drop-shadow-lg justify-center items-center bg-hero-pillars">
       <div className="absolute">
       <div className="flex flex-col items-center my-10">
       <h3 className="text-white font-bold text-xs">Associated Mosque</h3>

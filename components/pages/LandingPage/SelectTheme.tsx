@@ -18,7 +18,7 @@ const SelectTheme = () => {
         
         <div className="relative grid grid-cols-1 grid-rows-1 lg:grid-cols-2 lg:grid-rows-2 gap-12 mt-20 z-[1]">
           <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px]">
-            <div className="w-full h-full rounded-t-[30px] bg-black"></div>
+            <div className="w-full h-full rounded-t-[30px] bg-namaz "></div>
             <div className="flex flex-col text-center py-1">
               <h3 className="text-[7px]">Associated Mosque</h3>
               <h1 className="text-black">Namaz Timings</h1>
@@ -26,7 +26,7 @@ const SelectTheme = () => {
           </div>
         
           <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px] z-[1]">
-            <div className="w-full h-full rounded-t-[30px] bg-black"></div>
+            <div className="w-full h-full rounded-t-[30px] bg-namaz"></div>
             <div className="flex flex-col text-center py-1">
               <h3 className="text-[7px]">Associated Mosque</h3>
               <h1 className="text-black">Namaz Timings</h1>
@@ -34,7 +34,7 @@ const SelectTheme = () => {
           </div>
         
           <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px] z-[1]">
-            <div className="w-full h-full rounded-t-[30px] bg-black"></div>
+            <div className="w-full h-full rounded-t-[30px] bg-namaz"></div>
             <div className="flex flex-col text-center py-1">
               <h3 className="text-[7px]">Associated Mosque</h3>
               <h1 className="text-black">Namaz Timings</h1>
@@ -42,7 +42,7 @@ const SelectTheme = () => {
           </div>
         
           <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px] z-[1]">
-            <div className="w-full h-full rounded-t-[30px] bg-black"></div>
+            <div className="w-full h-full rounded-t-[30px] bg-namaz"></div>
             <div className="flex flex-col text-center py-1">
               <h3 className="text-[7px]">Associated Mosque</h3>
               <h1 className="text-black">Namaz Timings</h1>

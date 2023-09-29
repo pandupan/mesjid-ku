@@ -99,6 +99,19 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg-hero-pillars {
+  background-image: url("https://i.ibb.co/hKN31h6/Pillars.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-namaz {
+  background-image: url("https://i.ibb.co/7gTr1DW/namaz-timings.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Jika Anda ingin memastikan gambar tampilan mobile, Anda bisa menambahkan media query seperti ini: */
 @media (max-width: 640px) {
@@ -109,6 +122,9 @@ html {
     background-position:50%; 
   }
   .bg-hero-news {
+    background-position:50%;
+  }
+  .bg-hero-pillars {
     background-position:50%;
   }
 }
