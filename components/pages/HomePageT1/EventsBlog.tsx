@@ -93,7 +93,7 @@ const EventsBlog = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center gap-9">
-          <div className="relative overflow-hidden flex flex-row w-[432px] h-[149px] bg-white py-8 px-4 gap-6">
+          <div className="relative overflow-hidden flex flex-row sm:w-[432px] sm:h-[149px] w-[300px] h-[120px] bg-white py-8 px-4 gap-6">
             <div className="object-cover">
               <Image
                 src="/images/EventsBlog3.png"
@@ -103,19 +103,19 @@ const EventsBlog = () => {
             </div>
             <div className="absolute flex flex-row gap-4">
               <div className="flex flex-col">
-                <h1 className="text-6xl text-white font-bold">15</h1>
-                <h3 className="text-3xl text-white font-bold">Jan</h3>
+                <h1 className="sm:text-6xl text-4xl text-white font-bold">15</h1>
+                <h3 className="sm:text-3xl text-xl text-white font-bold">Jan</h3>
               </div>
-              <div className="flex flex-col gap-3">
-                <h1 className="text-2xl text-white font-bold">
+              <div className="flex flex-col gap-2 sm:gap-3">
+                <h1 className="sm:text-2xl text-lg text-white font-bold">
                   Is Islam Old Philosophy?
                 </h1>
-                <div className="flex flex-row gap-6">
+                <div className="flex flex-row gap-2 sm:gap-6">
                   <div className="flex flex-row gap-1 items-center">
                     <div className="text-white">
                       <FaLocationPin size={17} />
                     </div>
-                    <h3 className="place-self-center text-base text-white">
+                    <h3 className="place-self-center text-xs sm:text-base text-white">
                       Park Lane, London
                     </h3>
                   </div>
@@ -123,32 +123,32 @@ const EventsBlog = () => {
                     <div className="text-white">
                       <AiFillClockCircle size={17} />
                     </div>
-                    <h3 className="place-self-center text-base text-white">
+                    <h3 className="place-self-center text-xs sm:text-base text-white">
                       Imam Ullah
                     </h3>
                   </div>
                 </div>
-                <a href="" className="text-white text-sm">
+                <a href="" className="text-white text-xs sm:text-sm">
                   View Details
                 </a>
               </div>
             </div>
           </div>
-          <div className="flex flex-row w-[432px] h-[149px] bg-white py-8 px-4 gap-6 shadow-md">
-            <div className="flex flex-col">
-              <h1 className="text-6xl text-theme-secondary font-bold">22</h1>
-              <h3 className="text-3xl text-theme-secondary font-bold">Jan</h3>
+          <div className="flex flex-row sm:w-[432px] sm:h-[149px] w-[300px] h-[120px] bg-white py-3 sm:py-8 sm:px-4 sm:gap-6 shadow-md">
+            <div className="flex flex-col px-4">
+                <h1 className="sm:text-6xl text-4xl text-theme-secondary font-bold">22</h1>
+                <h3 className="sm:text-3xl text-xl text-theme-secondary font-bold">Jan</h3>
             </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="text-2xl text-theme-secondary font-bold">
+            <div className="flex flex-col gap-2 sm:gap-3">
+              <h1 className="sm:text-2xl text-lg text-theme-secondary font-bold">
                 Is Islam Old Philosophy?
               </h1>
-              <div className="flex flex-row gap-6">
+              <div className="flex flex-row gap-2 sm:gap-6">
                 <div className="flex flex-row gap-1 items-center">
                   <div className="text-[#13bbb4]">
                     <FaLocationPin size={17} />
                   </div>
-                  <h3 className="place-self-center text-base">
+                  <h3 className="place-self-center text-xs sm:text-base ">
                     Park Lane, London
                   </h3>
                 </div>
@@ -156,29 +156,29 @@ const EventsBlog = () => {
                   <div className="text-[#13bbb4]">
                     <AiFillClockCircle size={17} />
                   </div>
-                  <h3 className="place-self-center text-base">Imam Ullah</h3>
+                  <h3 className="place-self-center text-xs sm:text-base">Imam Ullah</h3>
                 </div>
               </div>
-              <a href="" className="text-theme-secondary text-sm">
+              <a href="" className="text-theme-secondary text-xs sm:text-sm">
                 View Details
               </a>
             </div>
           </div>
-          <div className="flex flex-row w-[432px] h-[149px] bg-white py-8 px-4 gap-6 shadow-md">
-            <div className="flex flex-col">
-              <h1 className="text-6xl text-theme-secondary font-bold">26</h1>
-              <h3 className="text-3xl text-theme-secondary font-bold">Jan</h3>
+          <div className="flex flex-row sm:w-[432px] sm:h-[149px] w-[300px] h-[120px] bg-white py-3 sm:py-8 sm:px-4 sm:gap-6 shadow-md">
+            <div className="flex flex-col px-4">
+                <h1 className="sm:text-6xl text-4xl text-theme-secondary font-bold">26</h1>
+                <h3 className="sm:text-3xl text-xl text-theme-secondary font-bold">Jan</h3>
             </div>
-            <div className="flex flex-col gap-3">
-              <h1 className="text-2xl text-theme-secondary font-bold">
+            <div className="flex flex-col gap-2 sm:gap-3">
+              <h1 className="sm:text-2xl text-lg text-theme-secondary font-bold">
                 Is Islam Old Philosophy?
               </h1>
-              <div className="flex flex-row gap-6">
+              <div className="flex flex-row gap-2 sm:gap-6">
                 <div className="flex flex-row gap-1 items-center">
                   <div className="text-[#13bbb4]">
                     <FaLocationPin size={17} />
                   </div>
-                  <h3 className="place-self-center text-base">
+                  <h3 className="place-self-center text-xs sm:text-base ">
                     Park Lane, London
                   </h3>
                 </div>
@@ -186,10 +186,10 @@ const EventsBlog = () => {
                   <div className="text-[#13bbb4]">
                     <AiFillClockCircle size={17} />
                   </div>
-                  <h3 className="place-self-center text-base">Imam Ullah</h3>
+                  <h3 className="place-self-center text-xs sm:text-base">Imam Ullah</h3>
                 </div>
               </div>
-              <a href="" className="text-theme-secondary text-sm">
+              <a href="" className="text-theme-secondary text-xs sm:text-sm">
                 View Details
               </a>
             </div>
