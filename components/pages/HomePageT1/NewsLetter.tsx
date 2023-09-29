@@ -12,10 +12,7 @@ import { TfiYoutube } from "react-icons/tfi";
 import { GrGooglePlus } from "react-icons/gr";
 const NewsLetter = () => {
   return (
-    <div className=" sm:px-8 md:px-22 xl:px-10 relative overflow-hidden flex flex-col w-full h-[800px]">
-      <div className="object-cover aspect-square">
-        <Image src="/images/NewsLetter.png" alt="bg-vector" fill={true} />
-      </div>
+    <div className=" sm:px-8 md:px-22 xl:px-10 relative overflow-hidden flex flex-col w-full h-[800px] bg-hero-news">
       <div className="absolute container flex flex-col sm:py-12 py-4 md:px-0 xl:px-44 xl:container">
         <h3 className="text-white text-xs sm:text-sm font-semibold">
           Join Our

@@ -93,6 +93,13 @@ html {
   background-size: cover;
 }
 
+.bg-hero-news {
+  background-image: url("https://i.ibb.co/XfHj2Q8/News-Letter.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Jika Anda ingin memastikan gambar tampilan mobile, Anda bisa menambahkan media query seperti ini: */
 @media (max-width: 640px) {
   .bg-hero {
@@ -100,5 +107,8 @@ html {
   }
   .bg-hero-hp {
     background-position:50%; 
+  }
+  .bg-hero-news {
+    background-position:50%;
   }
 }
