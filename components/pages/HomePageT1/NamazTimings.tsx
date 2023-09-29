@@ -5,7 +5,7 @@ const NamazTimings = () => {
     <div className="px-4 sm:px-10 xl:container flex flex-col pb-20 ">
       <div className="flex flex-col items-center my-10">
         <h3 className="font-bold text-xs">Associated Mosque</h3>
-        <h1 className="text-theme-secondary text-3xl lg:text-6xl font-bold">
+        <h1 className="text-theme-secondary text-3xl sm:text-5xl lg:text-6xl font-bold">
           Namaz Timings
         </h1>
       </div>
