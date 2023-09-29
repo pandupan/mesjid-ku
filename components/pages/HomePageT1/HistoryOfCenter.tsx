@@ -17,13 +17,13 @@ const HistoryOfCenter = () => {
       <h2 className='font-bold sm:text-base text-sm'>
         The Mosque is the #1 Islamic Center in the Country!
       </h2>
-      <div className='flex flex-row gap-28 sm:text-base text-sm'>
-        <ul>
-          <li>Astonishing Facilities</li>
+      <div className='flex flex-row gap-28 sm:text-base text-sm ml-4 sm:ml-0'>
+        <ul style={{ listStyleType: 'disc' }}>
+          <li>Astonishing Facilities</li> 
           <li>Leads Charity Events</li>
           <li>Feeding Hungry People</li>
         </ul>
-        <ul>
+        <ul style={{ listStyleType: 'disc' }}>
           <li>Helping Communities</li>
           <li>Schooling Children</li>
           <li>Providing Homes</li>
