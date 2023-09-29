@@ -5,8 +5,8 @@ import Button from "@/components/core/Button";
 
 const ContactUsHome = () => {
   return (
-      <section id="contact" className="my-10">
-        <div className="relative h-auto w-full flex flex-col lg:flex-row px-4 sm:px-10 xl:container justify-center items-center gap-12">
+      <section id="contact">
+        <div className="relative bg-[#e7f8f7] h-auto w-full py-10 flex flex-col lg:flex-row px-4 sm:px-10  justify-center items-center gap-12">
 
           <div className="absolute -bottom-80 right-0 z-0">
             <div className="relative aspect-square w-[280px] h-[740px]">
@@ -26,7 +26,7 @@ const ContactUsHome = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-5 space-y-1 bg-white z-[1]">
+          <div className="flex flex-col gap-5 space-y-1 bg-[#e7f8f7] z-[1]">
             <h1 className="text-[#0C7C95] text-4xl md:text-6xl lg:text-7xl font-bold">Contact Us</h1>
             <Input type="email" placeholder="Email address" />
             <Input type="title" placeholder="Title/Subject" />
