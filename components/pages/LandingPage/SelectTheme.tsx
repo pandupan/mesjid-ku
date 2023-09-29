@@ -51,7 +51,7 @@ const SelectTheme = () => {
         
         </div>
 
-        <div className="absolute -bottom-0 -right-20 z-[-1]">
+        <div className="hidden sm:block absolute -bottom-0 -right-20 z-[-1]">
           <div className="relative aspect-square w-[608px] h-[656px]">
             <Image
               src="/images/bg-vector-3-1.png"
