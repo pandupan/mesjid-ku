@@ -283,7 +283,7 @@ const Navbar = () => {
         nav ?
           "fixed lg:hidden top-[125px] left-0 right-0 bottom-0 flex justify-center items-center h-[100vh] bg-white ease-in-out duration-700 z-[80]"
         :
-          "fixed lg:hidden top-[-100%] left-0 right-0 bottom-0 flex justify-center items-center h-[100vh] bg-white ease-in-out duration-700 z-[80]"
+          "fixed lg:hidden top-[-200%] left-0 right-0 bottom-0 flex justify-center items-center h-[100vh] bg-white ease-in-out duration-700 z-[80]"
       }>
         <div className="w-full h-full px-[25px]">
           <ul className="space-y-5 text-lg my-6 px-1" onClick={() => setNav(!nav)}>
