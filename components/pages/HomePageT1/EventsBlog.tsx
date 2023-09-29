@@ -10,8 +10,9 @@ const EventsBlog = () => {
       <h3 className="text-[#004B48] font-bold text-xs">Events & Blog</h3>
         <h1 className="text-[#004B48] text-3xl lg:text-6xl font-bold">Our Event & Blog</h1>
       </div>
-      <div className="flex sm:flex-row flex-col gap-6 mt-10">
+      <div className="flex xl:flex-row flex-col gap-6 mt-10">
         <div className="flex flex-col gap-6 items-center">
+
           <div className="flex flex-row items-center bg-white w-[300px] h-[200px] sm:w-[714px] sm:h-[247px] shadow-md">
             <div className="flex sm:flex-row">
               <div className="relative sm:w-[298px] sm:h-[247px] bg-[#b6c9c3]">
@@ -51,6 +52,7 @@ const EventsBlog = () => {
               </div>
             </div>
           </div>
+          
           <div className="flex flex-row items-center bg-white w-[300px] h-[200px] sm:w-[714px] sm:h-[247px]  shadow-md">
             <div className="flex flex-row">
               <div className="relative sm:w-[298px] sm:h-[247px] bg-[#b6c9c3]">
@@ -93,7 +95,8 @@ const EventsBlog = () => {
         </div>
 
         <div className="flex flex-col justify-center items-center gap-9">
-          <div className="relative overflow-hidden flex flex-row sm:w-[432px] sm:h-[149px] w-[300px] h-[120px] bg-white py-8 px-4 gap-6">
+          <div className="flex flex-col md:flex-col xl:flex-col gap-9">
+          <div className="relative overflow-hidden flex flex-row sm:w-[715px] sm:h-[149px] xl:w-[432px] xl:h-[149px] w-[300px] h-[120px] bg-white py-8 px-4 gap-6">
             <div className="object-cover">
               <Image
                 src="/images/EventsBlog3.png"
@@ -134,8 +137,8 @@ const EventsBlog = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row sm:w-[432px] sm:h-[149px] w-[300px] h-[120px] bg-white py-3 sm:py-8 sm:px-4 sm:gap-6 shadow-md">
-            <div className="flex flex-col px-4">
+          <div className="flex flex-row sm:w-[715px] sm:h-[149px] xl:w-[432px] xl:h-[149px] w-[300px] h-[120px] bg-white py-8 sm:px-4 sm:gap-6 shadow-md">
+            <div className="flex flex-col px-3 sm:px-0">
                 <h1 className="sm:text-6xl text-4xl text-theme-secondary font-bold">22</h1>
                 <h3 className="sm:text-3xl text-xl text-theme-secondary font-bold">Jan</h3>
             </div>
@@ -164,8 +167,9 @@ const EventsBlog = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-row sm:w-[432px] sm:h-[149px] w-[300px] h-[120px] bg-white py-3 sm:py-8 sm:px-4 sm:gap-6 shadow-md">
-            <div className="flex flex-col px-4">
+          </div>
+          <div className="flex flex-row sm:w-[715px] sm:h-[149px] xl:w-[432px] xl:h-[149px] w-[300px] h-[120px] bg-white py-8 sm:px-4 sm:gap-6 shadow-md">
+            <div className="flex flex-col px-3 sm:px-0">
                 <h1 className="sm:text-6xl text-4xl text-theme-secondary font-bold">26</h1>
                 <h3 className="sm:text-3xl text-xl text-theme-secondary font-bold">Jan</h3>
             </div>
