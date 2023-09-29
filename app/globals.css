@@ -81,14 +81,24 @@ html {
 
 .bg-hero {
   background-image: url("https://i.ibb.co/pfKPTGP/HeroLP.png");
-  background-position:50% center; /* Mengambil bagian ujung kanan gambar */
+  background-position:50% center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Jika Anda ingin memastikan bahwa gambar tidak diambil bagian ujung kirinya pada tampilan mobile, Anda bisa menambahkan media query seperti ini: */
+.bg-hero-hp {
+  background-image: url("https://i.ibb.co/2PJRYs8/heroHP.png");
+  background-position:50% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Jika Anda ingin memastikan gambar tampilan mobile, Anda bisa menambahkan media query seperti ini: */
 @media (max-width: 640px) {
   .bg-hero {
+    background-position:50%; 
+  }
+  .bg-hero-hp {
     background-position:50%; 
   }
 }

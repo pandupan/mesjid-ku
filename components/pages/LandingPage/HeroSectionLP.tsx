@@ -20,7 +20,7 @@ const HeroSectionLP = () => {
         </button>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default HeroSectionLP;
