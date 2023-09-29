@@ -25,7 +25,7 @@ const SelectTheme = () => {
             </div>
           </div>
         
-          <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px]">
+          <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px] z-[1]">
             <div className="w-full h-full rounded-t-[30px] bg-black"></div>
             <div className="flex flex-col text-center py-1">
               <h3 className="text-[7px]">Associated Mosque</h3>
@@ -33,7 +33,7 @@ const SelectTheme = () => {
             </div>
           </div>
         
-          <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px]">
+          <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px] z-[1]">
             <div className="w-full h-full rounded-t-[30px] bg-black"></div>
             <div className="flex flex-col text-center py-1">
               <h3 className="text-[7px]">Associated Mosque</h3>
@@ -41,7 +41,7 @@ const SelectTheme = () => {
             </div>
           </div>
         
-          <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px]">
+          <div className="flex flex-col aspect-square sm:w-[420px] h-[250px] shadow-md rounded-[30px] z-[1]">
             <div className="w-full h-full rounded-t-[30px] bg-black"></div>
             <div className="flex flex-col text-center py-1">
               <h3 className="text-[7px]">Associated Mosque</h3>
@@ -51,7 +51,7 @@ const SelectTheme = () => {
         
         </div>
 
-        <div className="absolute -bottom-0 -right-20 z-0">
+        <div className="absolute -bottom-0 -right-20 z-[-1]">
           <div className="relative aspect-square w-[608px] h-[656px]">
             <Image
               src="/images/bg-vector-3-1.png"
